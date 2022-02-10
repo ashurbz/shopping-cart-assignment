@@ -15,7 +15,7 @@ function AsideMobile({ cat, categories, setCat, setMenu }) {
               }}
               onClick={() => {
                 setCat((cat) => {
-                  if (cat && cat == p.id) return null;
+                  if (cat && cat === p.id) return null;
                   else return p.id;
                 });
                 setMenu(false);

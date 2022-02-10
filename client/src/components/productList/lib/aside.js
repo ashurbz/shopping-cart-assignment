@@ -15,7 +15,7 @@ function Aside({ cat, categories, setCat }) {
               }}
               onClick={() =>
                 setCat((cat) => {
-                  if (cat && cat == p.id) return null;
+                  if (cat && cat === p.id) return null;
                   else return p.id;
                 })
               }

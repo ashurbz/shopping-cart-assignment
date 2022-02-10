@@ -5,7 +5,7 @@ function postData(data) {
   var axios = require("axios");
   var config = {
     method: "post",
-    url: "http://localhost:5000/signup",
+    url: "http://localhost:7123/signup",
     headers: {},
   };
 
