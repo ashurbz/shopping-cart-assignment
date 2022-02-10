@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, {useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import "./cart.scss";
 import { handlecartupdate } from "../../Redux/action";
@@ -60,7 +60,7 @@ function Cart({ setCart }) {
           <div style={{ height: "80%", overflow: "auto" }}>
             <div className="items">
               {cart.map((i) => (
-                <Item i={i} />
+                <Item i={i} key={i} />
               ))}
             </div>
             <div className="lowest">

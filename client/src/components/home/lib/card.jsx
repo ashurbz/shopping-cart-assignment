@@ -18,7 +18,7 @@ function Card({ c, i }) {
           <div>{c.description}</div>
           <button
             onClick={() => history.push("products#" + c.id)}
-            style={{ width: "max-content", padding: "10px 20px" }}
+            style={{ width: "max-content", padding: "10px 20px" ,cursor:'pointer'}}
             className="btn"
           >
             Explore {c.key}

@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import "../cart.scss";
+import {AiFillPlusCircle , AiFillMinusCircle} from 'react-icons/ai'
 import { handleIncrement, handledecrement } from "../../../Redux/action";
 
 function Item({ i }) {
@@ -22,19 +23,19 @@ function Item({ i }) {
       <div className="quantity">
         <h3>{i.name}</h3>
         <div>
-          <button
+          <AiFillMinusCircle
             onClick={() => dispatch(handledecrement(i))}
             className={"changeQnt"}
           >
             -
-          </button>{" "}
+          </AiFillMinusCircle>{" "}
           <span>{qty}</span>{" "}
-          <button
+          <AiFillPlusCircle
             onClick={() => dispatch(handleIncrement(i))}
             className={"changeQnt"}
           >
             +
-          </button>{" "}
+        </AiFillPlusCircle>{" "}
           <span>x &nbsp; &nbsp;&nbsp; Rs.{i.price} </span>
         </div>
       </div>

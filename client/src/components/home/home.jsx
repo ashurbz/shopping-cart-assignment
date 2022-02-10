@@ -37,7 +37,7 @@ function Home({ categories }) {
         )}
         <div>
           {categories.map((c, i) => {
-            return <Card c={c} i={i} />;
+            return <Card c={c} key={i} />;
           })}
         </div>
       </div>
