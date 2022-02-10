@@ -168,6 +168,7 @@ class Register extends React.Component {
               id="standard-basic"
               label="First Name"
               name="firstName"
+              aria-label="first name"
               helperText={
                 errorMessage(this.state.firstName, this.state.error)
                   ? "Please enter First Name."
@@ -181,6 +182,7 @@ class Register extends React.Component {
               id="standard-basic"
               label="Last Name"
               name="lastName"
+              aria-label="last name"
               helperText={
                 errorMessage(this.state.lastName, this.state.error)
                   ? "Please enter Last Name."
@@ -197,6 +199,7 @@ class Register extends React.Component {
               id="standard-basic"
               label="Email"
               type="email"
+              aria-label="email"
               name="email"
               error={this.state.errors.email}
               helperText={
@@ -215,6 +218,7 @@ class Register extends React.Component {
               id="standard-basic"
               label="Password"
               name="password"
+              aria-label="password"
               type="password"
               value={this.state.pass}
               error={this.state.errors.pass}
@@ -234,6 +238,7 @@ class Register extends React.Component {
               required
               id="standard-basic"
               label="Confirm Password"
+              aria-label="confirm password"
               value={this.state.cPass}
               name="confirmPassword"
               error={this.state.errors.confirmPass}

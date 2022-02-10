@@ -54,8 +54,8 @@ function Product({ categories }) {
       <main className="mainContainer">
         {itemlist
           .filter((item) => (cat == null ? true : item.category === cat))
-          .map((p) => {
-            return <Card p={p} />;
+          .map((p,i) => {
+            return <Card p={p} key ={i}/>;
           })}
       </main>
     </div>
